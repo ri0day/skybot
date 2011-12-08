@@ -61,4 +61,4 @@ while True:
         except Queue.Empty:
             pass
     while all(conn.out.empty() for conn in bot.conns.itervalues()):
-        time.sleep(.1)
+        time.sleep(0.1)

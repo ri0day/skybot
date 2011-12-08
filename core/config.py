@@ -12,7 +12,7 @@ if not os.path.exists('config'):
         {
           "connections":
           {
-            "local irc":
+            "localhost":
             {
               "server": "localhost",
               "nick": "skybot",

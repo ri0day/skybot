@@ -42,7 +42,7 @@ class crlf_tcp(object):
         return socket.socket(socket.AF_INET, socket.TCP_NODELAY)
 
     def run(self):
-        self.socket.connect((self.host, self.port))
+        self.socket.connect((self.host,self.port))
         thread.start_new_thread(self.recv_loop, ())
         thread.start_new_thread(self.send_loop, ())
 
@@ -72,7 +72,7 @@ class crlf_tcp(object):
                         self.iqueue.put(StopIteration)
                         self.socket.close()
                         return
-                    time.sleep(1)
+                    time.sleep(0.1)
             except (self.get_timeout_exception_type(), socket.error) as e:
                 if self.handle_receive_exception(e, last_timestamp):
                     return
