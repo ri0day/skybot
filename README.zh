@@ -1,0 +1,75 @@
+Loading plugins
+  plugin listing:
+    command:
+      plugins/bf.py:bf:14                         bf     #执行一种叫brandfuck的语言，返回结果，没用。
+      plugins/bigassmessage.py:bam:4              bam    #返回一个url.在bigmessage 这个网站生成一个你提交的字符串动画(.bam whoisyourdaddy)
+      plugins/bitcoin.py:bitcoin:4                bitcoin #查看当前bitcoin的兑换率 (.bitcoin)
+      plugins/choose.py:choose:7                  choose   #在你例举的几个字符串中随机选出一个(.choose apple,orange,cheese,blanana)
+      plugins/dice.py:dice:35                     dice, roll #扔色子的，没用
+      plugins/dictionary.py:define:29             dictionary, define   #查询一个含义，字典 (.define python)
+      plugins/dictionary.py:etymology:89          etymology, e #查询一个单词来来源 (.e what)
+      plugins/dictionary.py:urban:6               urban, u     #也是查字典的。没什么意思
+      plugins/dotnetpad.py:cs:53                  cs           #向一个dotnetpad 提交你的代码.没用
+      plugins/dotnetpad.py:fs:46                  fs           #提交一个code 到执行F#，没用
+      plugins/down.py:down:6                      down         #查看一个网站是否宕机 (.down http://www.baidu.com)
+      plugins/drama.py:drama:10                   drama, ed    #向encyclopediadramatica.ch 提交一个查询 (.ed show)
+      plugins/explain.py:explain:5                explain      #查找c的一个扩展
+      plugins/gcalc.py:calc:4                     calc         #计算器，没什么用(.calc 222+2)
+      plugins/google.py:gis:12                    gis          #google图片搜索，返回一个图片链接 (.gis python)
+      plugins/google.py:google:26                 google, g    #google网页搜索,返回第一个匹配到的网站的 头信息(.g python)
+      plugins/hash.py:hash:16                     hash         #hash 加密你提交的字符串(.hash admin)
+      plugins/hash.py:md5:6                       md5          #md5 加密你提交的字符串(.md5 admin)
+      plugins/hash.py:sha1:11                     sha1         #sha1 加密你提交的字符串(.sha1 admin)
+      plugins/help.py:help:6                      help         #返回一个可用command的列表给你(.help)
+      plugins/imdb.py:imdb:6                      imdb         #去imdb这个网站查询你提交的电影名称，返回一些电影的信息(.imdb takers)
+      plugins/lastfm.py:lastfm:9                  lastfm       #api key 已经不可用了。本来是查询一个歌曲信息的
+      plugins/mem.py:mem:7                        mem          #返回本机mv内存使用信息
+      plugins/metacritic.py:metacritic:9          mc           #去http://www.metacritic.com 查找你提交的游戏歌曲或者其他东西的信息(.mc movie takers)
+      plugins/mtg.py:mtg:6                        mtg          #查个魔法卡的东西。没什么用
+      plugins/oblique.py:oblique:28               oblique, o   #去调用一个nslater的东西，和bot一样的东西。没什么用。
+      plugins/pre.py:predb:6                      predb        #去http://orlydb.com/ 查找你提交的内容
+      plugins/profile.py:profile:6                profile      #去http://forums.somethingawful.com/member.php?action=getinfo 取个用户名的信息
+      plugins/pyexec.py:python:9                  python       #去http://eval.appspot.com/eval 提交你的代码。返给结果,被墙了。没用
+      plugins/quote.py:quote:38                   quote, q     #保存与某人的对话内容，没什么用
+      plugins/religion.py:bible:4                 bible, god   #查询圣经里的段落 没什么用
+      plugins/religion.py:koran:26                allah, koran #提交一个字符，返回韩国字，没什么用
+      plugins/remember.py:forget:64               forget, f    #忘记你提交的内容，与remember相对应，没用(.f key1)
+      plugins/remember.py:remember:23             remember, r  #提交一个key value 的内容，他会保存起来 (.r key1 vaule1)
+      plugins/rottentomatoes.py:rottentomatoes:11 rt           #提交一个电影名字。帮你在rottentomatoes.com 查找电影的排名与信息
+      plugins/seen.py:seen:25                     seen         #向最后一个在irc频道里的一个人发一个消息(.seen flysky bye)
+      plugins/snopes.py:snopes:9                  snopes       #向search.atomz.com 提交一个查询，返回结果.没用
+      plugins/stock.py:stock:6                    stock        #向google查询提交的股票代码，返回结果(.stock AAPL)
+      plugins/suggest.py:suggest:8                suggest      #向google提交一个查询，返回一个google建议的搜索最多不能超过10条(.suggest 5 takers)
+      plugins/tag.py:munge:8                      munge        #没用
+      plugins/tag.py:tag:79                       tag          #没用
+      plugins/tell.py:showtells:50                showtells    #列出与某人私信的记录()
+      plugins/tell.py:tell:72                     tell         #直接与某人私信对话
+      plugins/tf.py:tf:9                          hats, tf     #查询steamcommunity.com 上的资料
+      plugins/translate.py:babel:96               babel        #google翻译。没什么用
+      plugins/translate.py:babelext:106           babelext     #google翻译，没什么用。返回的结果多一些
+      plugins/translate.py:translate:59           translate    #google翻译。
+      plugins/tvdb.py:tv_last:131                 tv_last, tv_prev #向thetvdb.com查找电视剧信息的 
+      plugins/tvdb.py:tv_next:85                  tv_next, tv         ##向thetvdb.com查找电视剧信息的 
+      plugins/twitter.py:twitter:28               twitter       #发信息到twiter，被墙。没用
+      plugins/validate.py:validate:10             validate      #提供一个url给 validator.w3.org去验证这个url是否符合标准 (.validate http://www.baidu.com)
+      plugins/weather.py:weather:6                weather       #向google查询天气情况 (.weather NY)
+      plugins/wikipedia.py:wiki:15                wiki, w       #查询wikipedia ，被墙了。
+      plugins/wolframalpha.py:wolframalpha:6      wolframalpha, wa #查询wolframalpha.没什么用，算数学公式。物理公式的
+      plugins/youtube.py:youtube:63               youtube, y    #搜索youtube的视频，被墙。没用
+    event:
+      plugins/log.py:log:84                       *
+      plugins/misc.py:rejoin:27                   KICK
+      plugins/misc.py:onjoin:40                   004
+      plugins/misc.py:invite:35                   INVITE
+      plugins/tell.py:tellinput:25                PRIVMSG
+      plugins/seen.py:seeninput:15                PRIVMSG
+    regex:
+      plugins/youtube.py:youtube_url:58           (?:youtube.*?(?:v=|/v/)|youtu\.be/|yooouuutuuube.*?id=)([-_a-z0-9]+)
+      plugins/tinyurl.py:tinyurl:4                (?i)http://(?:www\.)?tinyurl.com/([A-Za-z0-9\-]+)
+      plugins/somethingawful.py:forum_link:22     (?i)forums\.somethingawful\.com/\S+threadid=(\d+)
+      plugins/vimeo.py:vimeo_url:4                vimeo.com/([0-9]+)
+      plugins/misc.py:version:64                  ^\x01VERSION\x01$
+      plugins/remember.py:question:84             ^\? ?(.+)
+      plugins/urlhistory.py:urlinput:66           ([a-zA-Z]+://|www\.)[^ ]+
+    sieve:
+      plugins/sieve.py:sieve_suite:6
