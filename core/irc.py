@@ -83,8 +83,9 @@ class crlf_tcp(object):
                 self.iqueue.put(decode(line))
 
     def send_loop(self):
-        while True:
-            line = self.oqueue.get().splitlines()[0][:500]
+        while True: #with big result 500 line is not enough 
+#            line = self.oqueue.get().splitlines()[0][:500]
+            line = self.oqueue.get().splitlines()[0][:5000]
             print ">>> %r" % line
             self.obuffer += line.encode('utf-8', 'replace') + '\r\n'
             while self.obuffer:
